@@ -21,7 +21,8 @@ function viewCart() {
     var cartItems = Object.keys(cart)
     var cartPhrase = []
     for (var i = 0; i < cartItems.length; i++) {
-      cartPhrase[i] = cartItems[i] + 'at $' + cart.cartItems[i]
+      cartValues = cartItems[i]
+      cartPhrase[i] = cartItems[i] + 'at $' + cart[cartValues]
       //iterate through cartItems, into new array that contains "{key} at ${value}"
     }
 
