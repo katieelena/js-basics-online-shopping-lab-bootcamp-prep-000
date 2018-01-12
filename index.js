@@ -17,7 +17,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (cart.length == 0) {
+  if (cart.length = 0) {
     var cartItems = Object.keys(cart)
     var cartPhrase = []
     for (var i = 0; i < cartItems.length; i++) {
