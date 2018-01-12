@@ -10,11 +10,24 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  var itemObject = {[item]: Math.floor(Math.random() * 100)}
+  cart.push(itemObject)
+  console.log(`${item} has been added to your cart.`)
+  return cart
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length = 0) {
+    var cartItems = Object.keys(cart)
+    for (var i = 0; i < cartItems.length; i++) {
+      //iterate through cartItems, into new array that contains "{key} at ${value}"
+    }
+    //join new array with commas
+    //print the join with 'Your cart is currently' + '.'
+  } else {
+    console.log('Your shopping cart is empty.')
+  }
+
 }
 
 function total() {
