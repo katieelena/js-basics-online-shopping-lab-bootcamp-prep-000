@@ -25,7 +25,7 @@ function viewCart() {
       //iterate through cartItems, into new array that contains "{key} at ${value}"
     }
 
-    return 'Your cart is currently' + cartPhrase.join(',' ) + '.'
+    return 'Your cart is currently' + cartPhrase.join(', ') + '.'
     //join new array with commas
     //print the join with 'Your cart is currently' + '.'
   } else {
