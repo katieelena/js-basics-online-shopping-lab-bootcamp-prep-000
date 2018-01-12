@@ -17,11 +17,11 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (cart.length = 0) {
+  if (cart.length == 0) {
     var cartItems = Object.keys(cart)
     var cartPhrase = []
     for (var i = 0; i < cartItems.length; i++) {
-      cartPhrase[i] = cartItems[i] + 'at $' + cart[cartItems[i]]
+      cartPhrase[i] = cartItems[i] + 'at $' + cart.cartItems[i]
       //iterate through cartItems, into new array that contains "{key} at ${value}"
     }
 
